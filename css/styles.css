@@ -1,3 +1,7 @@
 .logo{
   background-image: url("../img/logo.jpg");
 }
+
+.receipt{
+  display: none;
+}
