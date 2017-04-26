@@ -1,11 +1,20 @@
 $(document).ready(function() {
     $("#marketplace form").submit(function(event) {
-      var blanks = ["name", "email", "address", "exclamation", "purchase"];
+      var name= $("#name").val();
+      var gender = $("#gender").val();
+      var email= $("#email").val();
+      var address= $("#address").val();
 
-      blanks.forEach(function(blank) {
-        var userInput = $("input#" + blank).val();
-        $("." + blank).text(userInput);
-      });
+      var dop = $("#purchase").val();
+
+      $(".name").text(name);
+      $(".gender").text(gender);
+      $(".email").text(email);
+      $(".address").text(address);
+      $(".purchase").text(dop);
+
+
+
 
       $("#receipt").show();
 
