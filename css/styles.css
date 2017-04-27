@@ -16,7 +16,8 @@ h1{
 label{
   color: #a39600;
 }
-span{
+.pdesc{
+  color: #a0497d
 
 }
 
@@ -78,4 +79,9 @@ span{
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+h2{
+  color: #a39600;
+  font-family: 'Pacifico', cursive;
 }
