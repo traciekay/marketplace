@@ -5,6 +5,9 @@
     <title>Online marketplace</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Inconsolata|Pacifico|Quicksand|Raleway" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
   </head>
   <body>
     <div class="container">
@@ -17,11 +20,11 @@
 
       </div>
       <div class="row">
-        <div class="col-md-12">
-          <form class="" action="index.html" method="post" id="marketplace">
+        <div class="col-md-offset-3 col-md-6" id="marketplace">
+          <form>
             <div class="form-group">
               <label for="name">Name:</label>
-              <input type="text"class="form-control" id="name" placeholder="Name">
+              <input type="text" class="form-control" id="name" placeholder="Name">
             </div>
 
             <select class="form-control" id="gender">
@@ -39,34 +42,42 @@
               <textarea rows="4" cols="80" id="address" class="form-control"></textarea>
             </div>
 
-            <div class="checkbox" id="fruits">
-              <label for="products">Products:</label>
-              <label><input type="checkbox" value="">Mangoes</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" value="">Bananas</label>
-            </div>
-            <div class="checkbox disabled">
-              <label><input type="checkbox" value="" >Oranges</label>
+            <div class="form-group">
+              <label for="name">Date of Purchase:</label>
+              <input type="date"class="form-control" id="dop" placeholder="Date">
             </div>
 
-            <div class="form-group">
-              <label for="dop">Date of purchase:</label>
-              <input id="purchase" class="form-control" type="date">
-            </div>
+            <fieldset>
+              <label for="">Fruits</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="fruits" value="pineapple">
+                  Pineapple
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="fruits" value="apple">
+                  Apple
+                </label>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="btn">CheckOut</button>
 
           </form>
 
         </div>
 
       </div>
-      <div class="row receipt">
+      <div class="receipt">
         <h1>Receipt</h1>
         <p>Name : <span class="name"></span></p>
         <p>Gender : <span class="gender"></span></p>
         <p>Email : <span class="email"></span></p>
-        <p>Products : <span class="name"></span></p>
+        <p>Address : <span class="address"></span></p>
         <p>Date of Purchase : <span class="purchase"></span></p>
+        <p>Products : <span class="fruits"></span></p>
 
         <h2>Thank you for shopping with us</h2>
 
@@ -74,7 +85,6 @@
 
     </div>
 
-    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
+
   </body>
 </html>

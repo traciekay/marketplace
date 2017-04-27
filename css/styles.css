@@ -1,7 +1,21 @@
 .logo{
   background-image: url("../img/logo.jpg");
+  height: 304px;
 }
 
 .receipt{
   display: none;
+  text-align: center;
+}
+h1{
+  text-align: center;
+  color: #ff7d00;
+  font-family: 'Raleway', sans-serif;
+}
+
+label{
+  color: #a39600;
+}
+span{
+
 }
