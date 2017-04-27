@@ -63,27 +63,59 @@
               </div>
             </fieldset>
 
-            <button type="submit" class="btn">CheckOut</button>
+            <button type="submit" class="btn" id="myBtn">CheckOut</button>
 
           </form>
 
         </div>
 
       </div>
-      <div class="receipt">
-        <h1>Receipt</h1>
-        <p>Name : <span class="name"></span></p>
-        <p>Gender : <span class="gender"></span></p>
-        <p>Email : <span class="email"></span></p>
-        <p>Address : <span class="address"></span></p>
-        <p>Date of Purchase : <span class="purchase"></span></p>
-        <p>Products : <span class="fruits"></span></p>
+      <div class="receipt modal" id="myModal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>Receipt</h1>
+          <p>Name : <span class="name"></span></p>
+          <p>Gender : <span class="gender"></span></p>
+          <p>Email : <span class="email"></span></p>
+          <p>Address : <span class="address"></span></p>
+          <p>Date of Purchase : <span class="purchase"></span></p>
+          <p>Products : <span class="fruits"></span></p>
 
-        <h2>Thank you for shopping with us</h2>
+          <h2>Thank you for shopping with us</h2>
 
+
+        </div>
       </div>
 
     </div>
+
+    <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 
 
   </body>
